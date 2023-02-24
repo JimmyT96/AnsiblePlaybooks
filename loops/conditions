@@ -1,9 +1,0 @@
-#Playbooks with loops/conditions:
-- hosts: dev
-  become: true
-  tasks:
-   - name: Install list of packages
-     yum:
-       name: ['nano', 'wget', 'vim', 'zip', 'unzip']
-     when: ("ansible_distribution" == "RedHat")
-
