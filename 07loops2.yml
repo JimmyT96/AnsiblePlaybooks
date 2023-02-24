@@ -5,5 +5,5 @@
   tasks:
    - name: Install list of packages
      yum:
-      name: ['httpd', 'wget', 'vim', 'zip', 'unzip']
+      name: ['httpd', 'wget', 'vim', 'zip', 'unzip'] #when working on ubuntu server, change yum to apt and delete httpd
 ...
